@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: mc-app
-        image: afsar1990/argo:22
+        image: afsar1990/argo:24
         ports:
         - name: http
           containerPort: 8080
