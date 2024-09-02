@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: sindhurabankaa/argo:blue-11
+        image: sindhurabankaa/argo:blue-12
         ports:
         - name: http
           containerPort: 8080
