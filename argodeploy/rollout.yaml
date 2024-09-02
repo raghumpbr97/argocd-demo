@@ -1,9 +1,9 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
-  name: mc-app
+  name: web-app
   labels:
-    app: mc-app
+    app: we-app
 spec:
   replicas: 5
   strategy:
@@ -20,15 +20,15 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: mc-app
+      app: web-app
   template:
     metadata:
       labels:
-        app: mc-app
+        app: web-app
     spec:
       containers:
-      - name: mc-app
-        image: sindhurabankaa/argo:5
+      - name: web-app
+        image: sindhurabankaa/argo:blue-1
         ports:
         - name: http
           containerPort: 8080
