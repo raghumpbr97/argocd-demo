@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: mc-app
-        image: sindhurabankaa/argo:4
+        image: sindhurabankaa/argo:5
         ports:
         - name: http
           containerPort: 8080
